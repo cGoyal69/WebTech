@@ -122,19 +122,19 @@ body
 {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: max-content;
 }
 .part1
 {
     color: white;
-    background-color: green;
+    background-color: rgb(7, 143, 95);
     width: 30%;
-    height: 100%;
+    height: max-content;
 }
 .part2
 {
     width: 70%;
-    height: 100%;
+    height: max-content;
 }
 .heading6
 {
@@ -146,9 +146,13 @@ body
 .heading7
 {
     padding-left: 1%;
-    padding-top: 3.3%;
+    color: rgb(7, 143, 95);
 }
-.first
+.first , .second
+{
+    display: flex;
+}
+.cpi
 {
     display: flex;
 }
