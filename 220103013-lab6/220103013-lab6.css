@@ -127,7 +127,7 @@ body
 .part1
 {
     color: white;
-    background-color: rgb(7, 143, 95);
+    background-color: rgb(3, 113, 75);
     width: 30%;
     height: max-content;
 }
@@ -155,4 +155,17 @@ body
 .cpi
 {
     display: flex;
+}
+.part6
+{
+    display: flex;
+    padding-top: 10px;
+}
+.data2
+{
+    padding-left: 5px;
+}
+.part5
+{
+    padding-right: 3%;
 }
