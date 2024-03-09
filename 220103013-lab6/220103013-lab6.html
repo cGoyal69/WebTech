@@ -80,7 +80,7 @@
         <div class="skills">
             <h3> Skills: </h3>
             <h5>Programming Language</h5>
-            <select class="skills" id="progskills">
+            <select class="skills" id="fprogskills" multiple>
                 <option value="C">C</option>
                 <option value="C++">C++</option>
                 <option value="Java">Java</option>
@@ -89,22 +89,23 @@
                 <option value="Kotlin">Kotlin</option>
                 <option value="Swift">Swift</option>
             </select>
-            <h5>Database Language:</h5>
-            <select multiple class="skills" id="dataskills">
-                <option value="MySql">MySql</option>
-                <option value="MongoDb">MongoDb</option>
-            </select>
-            <h5>Text Editor Language:</h5>
-            <select multiple class="skills" id="dataskills">
-                <option value="Vscode">VsCode</option>
-                <option value="Sublime text">Sublime Text</option>
-            </select>
             <h5>Framework:</h5>
-            <select multiple class="skills" id="dataskills">
+            <select multiple class="skills" id="fframeskills">
                 <option value="react">React</option>
                 <option value="angular">Angular</option>
                 <option value="node">Node</option>
                 <option value="express">Express</option>
+            </select>
+            <h5>Database Skills:</h5>
+            <select multiple class="skills" id="fdataskills">
+                <option value="react">MySQL</option>
+                <option value="angular">MongoDB</option>
+            </select>
+            <h5>Other Skills:</h5>
+            <select multiple class="skills" id="fotherskills">
+                <option value="react">HTML</option>
+                <option value="Css">Css</option>
+                <option value="Latex">Latex</option>
             </select>
             <br>
             <hr>
@@ -305,7 +306,25 @@
                 <h3 class="heading heading3">
                     Skills
                 </h3>
-                <div class="line line3"></div>
+                <div class="line line3" ></div>
+                
+            </div>
+            <div class="details">
+                <ul>
+                    <li class="cv1prog">
+
+                    </li>
+                    <li class="cv1data">
+
+                    </li>
+                    <li class="cv1other">
+
+                    </li>
+                    <li class="cv1frame">
+
+                    </li>
+                </ul>
+                
             </div>
             <div class="userPD">
                 <h3 class=" heading heading4">
@@ -402,7 +421,7 @@
             <div class="part5">
                 <div class="data3">
                     <ul>
-                        <li class="progskill">
+                        <li id="progskill">
                             
                         </li>
                         <li class="dataskill">
@@ -424,19 +443,18 @@
             <div class="part5">
                 <div class="data3">
                     <ul>
-                        <li class="progskill">
+                        <li class="Lang">
                             
                         </li>
-                        <li class="dataskill">
+                        <li class="strength">
                             
                         </li>
-                        <li class="otherskill">
+                        <li class="hobby">
                             
                         </li>
-                        <li class="osskill">
+                        <li class="frameskill">
                             
                         </li>
-
                     </ul>
                 </div> 
             </div>

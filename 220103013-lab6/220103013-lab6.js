@@ -86,16 +86,62 @@ function myFun()
     let u2 = document.getElementById('father');
     u2.innerHTML =u1;
 
-    let apple = document.getElementById('progsskills')
-    var selected = [];
+    let apple = document.getElementById('fprogskills')
+    var selected = "";
     for (var option of apple.options)
     {
         if (option.selected) {
-            selected.push(option.value);
+            selected = selected + option.value + ", ";
         }
     }
-    console.log(selected);
+    apple1 = document.getElementById("cv1prog");
+    apple1.innerHTML = "Programming Skills "+selected;
+    apple1 = document.getElementById("progskill");
+    apple1.innerHTML = "Programming Skills: "+selected;
+
+
+    apple = document.getElementById('fdataskill')
+    var selected = "";
+    for (var option of apple.options)
+    {
+        if (option.selected) {
+            selected = selected + option.value + ", ";
+        }
+    }
+    apple1 = document.getElementById("cv1data");
+    apple1.innerHTML = "Database Skills "+selected;
+    apple1 = document.getElementById("dataskill");
+    apple1.innerHTML = "Database Skills: "+selected;
+
+
+    apple = document.getElementById('fotherskill')
+    var selected = "";
+    for (var option of apple.options)
+    {
+        if (option.selected) {
+            selected = selected + option.value + ", ";
+        }
+    }
+    apple1 = document.getElementById("cv1other");
+    apple1.innerHTML = "Other Skills "+selected;
+    apple1 = document.getElementById("otherskill");
+    apple1.innerHTML = "Other Skills: "+selected;
+
+
+    apple = document.getElementById('fframeskills')
+    var selected = "";
+    for (var option of apple.options)
+    {
+        if (option.selected) {
+            selected = selected + option.value + ", ";
+        }
+    }
+    apple1 = document.getElementById("cv1frame");
+    apple1.innerHTML = "FrameWorks: "+selected;
+    apple1 = document.getElementById("frameskill");
+    apple1.innerHTML = "Frameworks: "+selected;
 }
+
 let count = 0;
 function AddC()
 {
