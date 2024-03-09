@@ -122,12 +122,17 @@
                 </form>
             </div>
             <br>
+            <input type="radio" id="html" name="format" value="1">
+            <label for="html">CV Format 1</label><br>
+            <input type="radio" id="css" name="format" value="2">
+            <label for="css">CV Format 2</label><br>
+            
             <input type="button" id="Submit" value="Submit" onclick="myFun()"/> 
         </div>
         <hr>
         
     </div>
-    <div class="cv1">
+    <div class="cv1" id="cv1">
         <center><h2 id="name">Candidate Name</h2></center>
         <div class="content">
             <div class="userPD">
@@ -348,7 +353,7 @@
     <hr>    
     <br>
     <br>
-    <div class="cv2">
+    <div class="cv2" id="cv2">
         <div class="part1">
             <div  class="heading6">
                 <h2 id="name1">Candidate Name</h2>
@@ -426,13 +431,13 @@
                         <li id="progskill">
                             
                         </li>
-                        <li class="dataskill">
+                        <li id="dataskill">
                             
                         </li>
-                        <li class="otherskill">
+                        <li id="otherskill">
                             
                         </li>
-                        <li class="osskill">
+                        <li id="frameskill">
                             
                         </li>
 

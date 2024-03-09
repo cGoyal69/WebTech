@@ -13,6 +13,7 @@ body
 {
     padding-left: 5vw;
 }
+
 .userPD
 {
     display: flex;
@@ -170,4 +171,7 @@ body
 .part5
 {
     padding-right: 3%;
+}
+.cv1, .cv2{
+    display: none;
 }

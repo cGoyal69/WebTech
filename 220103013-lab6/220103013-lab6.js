@@ -1,5 +1,16 @@
 function myFun()
 {
+    let z12 = document.getElementById("html");
+    let z11 = document.querySelector(".form");
+    if(z12.checked)
+    {
+        document.getElementById("cv1").style.display = "block";
+        z11.style.display = "none";
+    }
+    else{
+        document.getElementById("cv2").style.display = "flex";
+        z11.style.display = "none";
+    }
     let a = document.getElementById('fname');
     a1 = a.value;
     let a2 = document.getElementById('name');
@@ -143,46 +154,46 @@ function myFun()
     apple1.innerHTML = "Programming Skills: "+selected;
 
 
-    apple = document.getElementById('fdataskill')
+    let banana = document.getElementById('fdataskills')
     var selected = "";
-    for (var option of apple.options)
+    for (var option of banana.options)
     {
         if (option.selected) {
             selected = selected + option.value + ", ";
         }
     }
-    apple1 = document.getElementById("cv1data");
-    apple1.innerHTML = "Database Skills "+selected;
-    apple1 = document.getElementById("dataskill");
-    apple1.innerHTML = "Database Skills: "+selected;
+    banana1 = document.getElementById("cv1data");
+    banana1.innerHTML = "Database Skills "+selected;
+    banana1 = document.getElementById("dataskill");
+    banana1.innerHTML = "Database Skills: "+selected;
 
 
-    apple = document.getElementById('fotherskill')
+    let pinepapple = document.getElementById('fotherskills')
     var selected = "";
-    for (var option of apple.options)
+    for (var option of pinepapple.options)
     {
         if (option.selected) {
             selected = selected + option.value + ", ";
         }
     }
-    apple1 = document.getElementById("cv1other");
-    apple1.innerHTML = "Other Skills "+selected;
-    apple1 = document.getElementById("otherskill");
-    apple1.innerHTML = "Other Skills: "+selected;
+    pinepapple1 = document.getElementById("cv1other");
+    pinepapple1.innerHTML = "Other Skills "+selected;
+    pinepapple1 = document.getElementById("otherskill");
+    pinepapple1.innerHTML = "Other Skills: "+selected;
 
 
-    apple = document.getElementById('fframeskills')
+    let mango = document.getElementById('fframeskills')
     var selected = "";
-    for (var option of apple.options)
+    for (var option of mango.options)
     {
         if (option.selected) {
             selected = selected + option.value + ", ";
         }
     }
-    apple1 = document.getElementById("cv1frame");
-    apple1.innerHTML = "FrameWorks: "+selected;
-    apple1 = document.getElementById("frameskill");
-    apple1.innerHTML = "Frameworks: "+selected;
+    mango1 = document.getElementById("cv1frame");
+    mango1.innerHTML = "FrameWorks: "+selected ;
+    mango1 = document.getElementById("frameskill");
+    mango1.innerHTML = "Frameworks: "+selected ;
 }
 
 let count = 0;
