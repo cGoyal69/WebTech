@@ -85,6 +85,10 @@ function myFun()
     u1 = u.value;
     let u2 = document.getElementById('father');
     u2.innerHTML =u1;
+    let v = document.getElementById('ffather');
+    v1 = v.value;
+    let v2 = document.getElementById('father');
+    v2.innerHTML = 'Permanent Address: '+v1;
 }
 let count =0;
 function AddC()

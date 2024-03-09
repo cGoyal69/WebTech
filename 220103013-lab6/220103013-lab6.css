@@ -85,13 +85,13 @@ body
 }
 
 .details1, .details21{
-    
     display: flex;
 }
 .head1
 {
     padding-top: 10px;
     width: 300px;
+    text-wrap:pretty;
 }
 .head2
 {
@@ -164,6 +164,8 @@ body
 .data2
 {
     padding-left: 5px;
+    width: 40%;
+    word-wrap: break-word;
 }
 .part5
 {
