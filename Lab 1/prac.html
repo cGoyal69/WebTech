@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  justify-content: center;
+  align-items: center;
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  background: red;
+  position: absolute;
+  animation-name: testAnimation;
+  animation-delay: 2s;
+}
+
+.abc{animation-duration: 10s; animation-iteration-count: infinite; animation-direction: alternate; animation-timing-function: ease;}
+.bcd{animation-duration: 2s;  animation-iteration-count: infinite; animation-direction: alternate-reverse; visibility: hidden;}
+.cde{animation-duration: 4s;  animation-iteration-count: infinite; animation-direction: alternate; visibility: hidden;}
+.def{animation-duration: 6s;  animation-iteration-count: infinite; animation-direction: reverse; visibility: hidden;}
+.efg{animation-duration: 8s;  animation-iteration-count: infinite; animation-direction: alternate; visibility: hidden;}
+
+
+@keyframes testAnimation {
+  0%   {left: 0px; top: 0px;width: 30px; height: 30px;background: radial-gradient(circle at 80px 50px, orange, black); visibility: visible;}
+  25%  {left: 200px; top: 400px; width: 50px; height: 50px;background: radial-gradient(circle at 50px 80px, pink, magenta); visibility: visible;}
+  50%  {left: 600px; top: 0px; width: 100px; height: 100px;background: radial-gradient(circle at 30px 30px, cyan, blue); visibility: visible; animation-timing-function: linear;}
+  75%  {left: 400px; top: 600px; width: 50px; height: 50px;background: radial-gradient(circle at 60px 60px, green, black); visibility: visible;}
+  100% {left: 0px; top: 0px; width: 30px; height: 30px; background: radial-gradient(circle at 80px 50px, orange, black); visibility: visible;}
+}
+</style>
+</head>
+<body>
+
+
+<div class="abc" ></div>
+<div class="bcd"></div>
+<div class="cde"></div>
+<div class="def"></div>
+<div class="efg"></div>
+
+
+</body>
+</html>

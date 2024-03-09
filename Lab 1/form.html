@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="form.css">
+        <title>CV</title>
+        <script src="form.js"></script>
+    </head>
+    <body>
+        <h2 class="heading">Biodata</h2>
+        <hr>
+        <div class="general information">
+            <h3>General information</h3>
+        <form>
+            <label for="fname" >Name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="addres">Address:</label>
+            <input type="text" id="address" name="address"><br><br>
+            <label for="Number">Contact Number:</label>
+            <input type="text" id="Number" name="Number"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="GitHub">GitHub:</label> 
+            <input type="Github" id="Github" name="Github"><br><br>
+            <label for="LinkedIN">LinkedIN:</label> 
+            <input type="LinkedIN" id="LinkedIN" name="LinkedIN"><br><br>
+            <label for="Lang">Lang:</label> 
+            <input type="Lang" id="Lang" name="Lang"><br><br>
+            <label for="Strength">Strength:</label> 
+            <input type="Strength" id="Strength" name="Strength"><br><br>
+            <label for="hobby">hobby:</label> 
+            <input type="hobby" id="hobby" name="hobby"><br><br>
+            </form>
+        </div>
+        <hr>
+        <div class="objective">
+            <h3>Objective:</h3>
+            <form>
+            
+                <textarea id="objective" name="objective" rows="5" cols="50">Please enter about yourself</textarea><br><br>
+            </form>
+        </div>
+        <hr>
+        <div class="Projects">
+            <h3> Projects </h3>
+            <form>
+
+                <label for="projects" >Project name:</label>
+                <input id="projects" ></input><br><br>
+                <textarea id="projectsdescrip" rows="5" cols="50"> Please tell us about the project </textarea><br><br>
+                <input type="button" value="Add Column" /> 
+            </form>
+        </div>
+        <hr> 
+        <div class="Acadinfo">
+            <h3>Academic Information</h3>
+            <h4>Year:</h4>
+            <div>
+                <input type="radio" id="1year" name="year" value="1year"/>
+                <label for="1year">1st year</label>
+            </div>
+            <div>
+                <input type="radio" id="2year" name="year" value="2year" />
+                <label for="2year">2nd year</label>
+            </div>
+            <div>
+                <input type="radio" id="3year" name="year" value="3year" />
+                <label for="3year">3rd year</label>
+            </div>
+            <div>
+                <input type="radio" id="4year" name="year"` value="4year" />
+                <label for="4year">4th year</label>
+            </div>
+            <div>
+                <h4> Current Semester: </h4>
+                <select class="Csem" id="Csem">
+                    <option value="1st">1st</option>
+                    <option value="2nd">2nd</option>
+                    <option value="3rd">3rd</option>
+                    <option value="4th">4th</option>
+                    <option value="5th">5th</option>
+                    <option value="6th">6th</option>
+                    <option value="7th">7th</option>
+                    <option value="8th">8th</option>
+                </select>
+            </div>
+            <h4>Courses Undertaken:</h4>
+            <div class="courses">
+                <label for="Ccode">Course code:</label>
+                <input type="text" id="Ccode" placeholder="Course code"/> 
+                <label for="Coname">Course name:</label>
+                <input type="text" id="Cname" placeholder="Course name"/> 
+                <label for="CoCredit">Course credit:</label>
+                <input type="number" id="CoCredit" placeholder="Credits"/> 
+                <label for="CoInst">Course Instructor:</label>
+                <input type="text" id="CoInst" placeholder="Course Instructor"/> 
+                <input type="button" value="Add Column" /> 
+                <br>
+                <br>
+            </div>
+            
+        <hr>
+        <div class="skills">
+            <h3> Skills: </h3>
+            <h5>Programming Language</h5>
+            <select class="skills" id="progskills">
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Kotlin">Kotlin</option>
+                <option value="Swift">Swift</option>
+            </select>
+            <h5>Database Language:</h5>
+            <select multiple class="skills" id="dataskills">
+                <option value="MySql">MySql</option>
+                <option value="MongoDb">MongoDb</option>
+            </select>
+            <h5>Text Editor Language:</h5>
+            <select multiple class="skills" id="dataskills">
+                <option value="Vscode">VsCode</option>
+                <option value="Sublime text">Sublime Text</option>
+            </select>
+            <h5>Framework:</h5>
+            <select multiple class="skills" id="dataskills">
+                <option value="react">React</option>
+                <option value="angular">Angular</option>
+                <option value="node">Node</option>
+                <option value="express">Express</option>
+            </select>
+            <br>
+            <br>
+            <input type="button" value="Submit" /> 
+        </div>
+        <hr>
+        
+    </body>
+</html>

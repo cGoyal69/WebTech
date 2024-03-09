@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Binary Calculator
+    </title>
+    <link rel="stylesheet" href="220103013-lab8.css">
+    <script src="220103013-lab8.js"></script>
+</head>
+<body>
+    <div class="Calc">
+        <div class="binCalc">
+            <div class="heading">
+                <h1> Binary Calculator </h1>
+                <b>Please Note: </b>
+                First Bit of the Binary Number indicates sign of the Number
+            </div>
+            <div class="display">
+                <input type="text" id="pokemon">
+            </div>
+            <div class="buttoons">
+                <div class="buttons1">
+                    <div class="buttons"> 
+                        <input type="button" value="0" id="button1" onclick="insert0()"> 
+                        <input type="button" value="1" id="button1" onclick="insert1()">
+                    </div>
+                    <div class="buttons">
+                        <input type="button" value="BITWISE AND" id="button2" onclick="insertband()"> 
+                        <input type="button" name="button1" id="button1" value="BITWISE OR" onclick="insertbor()">
+                    </div>
+                    <div class="buttons">
+                        <input type="button" value="Right Shift" id="button2" onclick="rshift()"> 
+                        <input type="button" name="button1" id="button1" value="Left Shift" onclick="lshift()">   
+                    </div>
+                    <div class="buttons">
+                        <input type="button" id="button3" value="Convert Into Binary" onclick="dispbin()">
+                    </div>
+                    <div class="buttons">
+                        <input type="button" id="button3" value="Convert Into HexaDecimal" onclick="disphex()">
+                    </div>
+                </div>
+                <div class="buttons1">
+                    <div class="buttons">
+                        <input type="button" value="Clear" id="button0" onclick="clearV()"> 
+                        <input type="button" value="Reset" id="button00" onclick="reset()">
+                        <input type="button" name="button1" id="button1" value="=" onclick="breaker() ">
+                    </div>
+                    <div class="buttons">
+                        <input type="button" name="button1" id="button1" value="BITWISE XOR" onclick="insertbxor()">
+                        <input type="button" name="button1" id="button1" value="BITWISE NOT" onclick="insertbnot()">
+                    </div>
+                    <div class="buttons">
+                        <input type="button" name="button1" id="button3" value="Unsigned Right Shift" onclick="urshift()"> 
+                    </div>
+                    <div class="buttons">
+                        <input type="button" id="button3" value="Convert Into Decimal" onclick="dispdec()">
+                    </div>
+                    <div class="buttons">
+                        <input type="button" id="button3" value="Convert Into Octal" onclick="dispoct()">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="buttoons">
+            </div>
+        </div>
+            <div class="animation">
+                <div class="heading">
+                    <h1> Demonstration </h1>
+                    <b>Please Note: </b>
+                    First Bit of the Binary Number indicates sign of the Number
+                </div>
+                <div class="container">
+                    <div class="container3">
+                    <div class="heading3 firstOp">
+
+                        </div>
+                        
+                        <div class="heading3 firstOpdec" >                 
+                        </div>
+                    </div>
+                    <div class="container3">
+                        <div class="heading3 Op">          
+                        </div>
+                    </div>
+                    <div class="container3">
+                        <div class="heading3 secOp">     
+                        </div>
+                        <div class="heading3 secOpdec">         
+                        </div>
+                    </div>
+                    <div class="container3">
+                        <div class="heading3 line1">
+                            -------                 
+                        </div>
+                    </div>
+                    <div class="container3">
+                        <div class="heading3 ans">                 
+                        </div>
+                    </div>
+                    <div class="container3">
+                        <div class="heading3 line2">
+                            -------                 
+                        </div>
+                    </div>
+                    <div class="container2">
+                        <div class="heading2">
+                            Answer in Decimal:
+                        </div>
+                        <div class="heading4 ansdec">
+                        </div>
+                    </div>
+                    <div class="container2">
+                        <div class="heading2">
+                            Answer in Octal:
+                        </div>
+                        <div class="heading4 ansoct">
+                        </div>
+                    </div>
+                    <div class="container2">
+                        <div class="heading2">
+                            Answer in HexaDecimal:
+                        </div>
+                        <div class="heading4 anshex">   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

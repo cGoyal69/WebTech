@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV format 1</title>
+    <link rel="stylesheet" href="220103013-lab6.css">
+    <script src="220103013-lab6.js"></script>
+</head>
+<body>
+    <div class="form">
+        <h2 class="heading">Biodata</h2>
+        <hr>
+        <div class="general information">
+            <h3>General information</h3>
+        <form>
+            <label for="fname" >Name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="faddres">Date Of Birth:</label>
+            <input type="text" id="fdob" name="address"><br><br>
+            <label for="father">Father's Name:</label> 
+            <input type="father" id="ffather" name="father"><br><br>
+            <label for="faddres">Address:</label>
+            <input type="text" id="faddress" name="address"><br><br>
+            <label for="Number">Contact Number:</label>
+            <input type="text" id="fnumber" name="Number"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="femail" name="email"><br><br>
+            <label for="GitHub">GitHub:</label> 
+            <input type="Github" id="fGithub" name="fGithub"><br><br>
+            <label for="LinkedIN">LinkedIn:</label> 
+            <input type="LinkedIN" id="fLinkedIn" name="fLinkedIn"><br><br>
+            <label for="Lang">Language:</label> 
+            <input type="Lang" id="fLang" name="Lang"><br><br>
+            <label for="Strength">Strength:</label> 
+            <input type="Strength" id="fstrength" name="Strength"><br><br>
+            <label for="hobby">hobby:</label> 
+            <input type="hobby" id="fhobby" name="hobby"><br><br>
+            </form>
+        </div>
+        <hr>
+        <div class="Projects">
+            <h3> Projects </h3>
+            <form>
+
+                <label for="projects" >Project name:</label>
+                <input id="projects" ></input><br><br>
+                <textarea id="projectsdescrip" rows="5" cols="50"> Please tell us about the project </textarea><br><br>
+                <input type="button" value="Add Column" /> 
+            </form>
+        </div>
+        <hr> 
+        <div class="Acadinfo">
+            <h3>Academic Information</h3>
+            <form>
+                <label for="fname" >College Name:</label>
+                <input type="text" id="fcollege" name="fname"><br><br>
+                <label for="faddres">Year please write in (yyyy-yyyy) format:</label>
+                <input type="text" id="fyear" name="address"><br><br>
+                <label for="Number">CPI:</label>
+                <input type="text" id="fgrade" name="Number"><br><br>
+                <label for="email">Btech Major:</label>
+                <input type="email" id="fsubject" name="email"><br><br>
+                <label for="GitHub">School (12th):</label> 
+                <input type="Github" id="fschool1" name="fGithub"><br><br>
+                <label for="cgpi">CGPI(12th):</label> 
+                <input type="cgpi" id="fgrade1" name="fcgpi"><br><br>
+                <label for="year2">Year of completing school:</label> 
+                <input type="year2" id="fyear2" name="year2"><br><br>
+                <label for="School">School (10th):</label> 
+                <input type="School" id="fschool2" name="School"><br><br>
+                <label for="cgpi">CGPI(10th):</label> 
+                <input type="cgpi" id="fgrade2" name="cgpi"><br><br>
+                <label for="hobby">year of completing 10th:</label> 
+                <input type="hobby" id="fyear3" name="hobby"><br><br>
+                </form>
+            </div>
+            
+        <hr>
+        <div class="skills">
+            <h3> Skills: </h3>
+            <h5>Programming Language</h5>
+            <select class="skills" id="progskills">
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Kotlin">Kotlin</option>
+                <option value="Swift">Swift</option>
+            </select>
+            <h5>Database Language:</h5>
+            <select multiple class="skills" id="dataskills">
+                <option value="MySql">MySql</option>
+                <option value="MongoDb">MongoDb</option>
+            </select>
+            <h5>Text Editor Language:</h5>
+            <select multiple class="skills" id="dataskills">
+                <option value="Vscode">VsCode</option>
+                <option value="Sublime text">Sublime Text</option>
+            </select>
+            <h5>Framework:</h5>
+            <select multiple class="skills" id="dataskills">
+                <option value="react">React</option>
+                <option value="angular">Angular</option>
+                <option value="node">Node</option>
+                <option value="express">Express</option>
+            </select>
+            <br>
+            <hr>
+            <div class="acheive">
+                <h3> Acheivements and Certificates </h3>
+                <form>
+    
+                    <label for="acheive" >Project name:</label>
+                    <input id="acheive" ></input><br><br>
+                    <textarea id="acheivedescrip" rows="5" cols="50"> Please tell us about the project </textarea><br><br>
+                    <input type="button" value="Add Column" /> 
+                </form>
+            </div>
+            <br>
+            <input type="button" id="Submit" value="Submit" onclick="myFun()"/> 
+        </div>
+        <hr>
+        
+    </div>
+    <div class="cv1">
+        <center><h2 id="name">Candidate Name</h2></center>
+        <div class="content">
+            <div class="userPD">
+                <h3 class="heading heading1">
+                    Personal Details
+                </h3>
+                <div class="line line1"></div>
+            </div>
+            <div class="details">
+                <div class="details1">
+                    <div class="head1">
+                        Date of Birth: 
+                    </div>
+                    <div class="head1" id="dob">
+                        12 June 2004
+                    </div>
+                </div>
+                <div class="details1">
+                    <div class="head1">
+                        Father's Name: 
+                    </div>
+                    <div class="head1" id="father">
+                        Madan Mohan Goyal
+                    </div>
+                </div>
+                <div class="details1">
+                    <div class="head1">
+                        Phone Number:
+                    </div> 
+                    <div class="head1" id="number">
+                        8829898937
+                    </div>
+                </div>
+                <div class="details1">
+                    <div class="head1">
+                        Email Address:
+                    </div>
+                    <div id="email" class="head1">
+                        <a href="mailto:" id="emaila">cgoy96@gmail.com</a>
+                    </div>
+                </div>
+                <div class="details1">
+                    <div class="head1">
+                        Strength:
+                    </div>
+                    <div id="strength" class="head1">
+                        
+                    </div>
+                </div>
+                <div class="details1">
+                    <div class="head1">
+                        Hobby: 
+                    </div>
+                    <div id="hobby" class="head1">
+                        
+                    </div>
+                </div>
+                <div class="details1">
+                    <div class="head1">
+                        Language Known:
+                    </div>
+                    <div id="Lang" class="head1">
+                        Hindi, English
+                    </div>
+                </div>
+                <div class="details1">
+                    <div class="head1">
+                        LinkedIn :
+                    </div>
+                    <div class="head1"  id="LinkedIn">
+                        
+                    </div>
+                </div>
+                <div class="details1">
+                    <div class="head1">
+                        GitHub : 
+                    </div>
+                    <div class="head1" id="Github">
+                        
+                    </div>
+                </div>
+                <div class="details1">
+                    <div class="head1">
+                        Permanent Address : 
+                    </div>
+                    <div id="address" class="head1">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="userPD">
+                <h3 class="heading heading2">
+                    Educational Details
+                </h3>
+                <div class="line line2"></div>
+            </div>
+            <div class="details2 ">
+                <div class="details21">
+                    <div class="head1">
+                        Bachelor of Technology in 
+                    </div>
+                    <div class="data"  id="college">
+                        Indian Institute of Information Technology Senapati, Manipur
+                    </div>
+                </div>
+                <div class="details21">
+                    <div class="head1" id="subject">
+                        Computer Science & Engineering
+                    </div>
+                    <div id="data" >
+                        <div class="cgpi">
+                            CGPI:
+                        </div>
+                        <div class="cgpi" id="grade">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="details21">
+                    <div class="head2" id ="year">
+                        2022 - 2026
+                    </div>
+                </div>
+                <div class="details21">
+                    <div class="head1">
+                        12th, Science
+                    </div>
+                    <div class="data" >
+                        <div>
+                            Institute name:
+                        </div>
+                        <div id="school1">
+                            Vidhya Sagar School
+                        </div>
+                    </div>
+                </div>
+                <div class="details21">
+                    <div class="head2" id="year2">
+                        2020-2022
+                    </div>
+                    <div class="data1 " >
+                        <div class="cgpi">
+                            CGPI:
+                        </div>
+                        <div class="cgpi" id="grade1">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="details21">
+                    <div class="head1">
+                        10th 
+                    </div>
+                    <div class="data" >
+                        <div>
+                            Institute name:
+                        </div>
+                        <div id="school2">
+                            Warren
+                        </div>
+                    </div>
+                </div>
+                <div class="details21">
+                    <div class="head2" id="year3">
+                        2020
+                    </div>
+                    <div class="data1" >
+                        <div class="cgpi ">
+                            CGPI:
+                        </div>
+                        <div class="cgpi" id="grade2">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="userPD">
+                <h3 class="heading heading3">
+                    Skills
+                </h3>
+                <div class="line line3"></div>
+            </div>
+            <div class="userPD">
+                <h3 class=" heading heading4">
+                    Project Undertaken
+                </h3>
+                <div></div>
+                <div class="line line4"></div>
+            </div>
+            <div class="userPD">
+                <h3 class="heading heading5">
+                    Acheivements and Certifications
+                </h3>
+                <div class="line line5"></div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <hr>    
+    <br>
+    <br>
+    <div class="cv2">
+        <div class="part1">
+            <div id="name" class="heading6">
+                <h2>Candidate Name</h2>
+            </div>
+        </div>
+        <div class="part2">
+            <h2 class="heading7">Profile Summary</h2>
+            <br>
+            <br>
+            <br>
+            <div>
+                <h2 class="heading7">Educational Details</h2>
+                <ul>
+                    <li>
+                        <div class="first">
+                            <div id="subject">
+                                Computer Science and Engineering 
+                            </div>we4
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV format 1</title>
+    <link rel="stylesheet" href="220103013-lab6.css">
+</head>
+<body>
+    <div>
+        <h2 class="heading">Biodata</h2>
+        <hr>
+        <div class="general information">
+            <h3>General information</h3>
+        <form>
+            <label for="fname" >Name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="addres">Address:</label>
+            <input type="text" id="address" name="address"><br><br>
+            <label for="Number">Contact Number:</label>
+            <input type="text" id="Number" name="Number"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="GitHub">GitHub:</label> 
+            <input type="Github" id="Github" name="Github"><br><br>
+            <label for="LinkedIN">LinkedIN:</label> 
+            <input type="LinkedIN" id="LinkedIN" name="LinkedIN"><br><br>
+            <label for="Lang">Lang:</label> 
+            <input type="Lang" id="Lang" name="Lang"><br><br>
+            <label for="Strength">Strength:</label> 
+            <input type="Strength" id="Strength" name="Strength"><br><br>
+            <label for="hobby">hobby:</label> 
+            <input type="hobby" id="hobby" name="hobby"><br><br>
+            </form>
+        </div>
+        <hr>
+        <div class="objective">
+            <h3>Objective:</h3>
+            <form>
+            
+                <textarea id="objective" name="objective" rows="5" cols="50">Please enter about yourself</textarea><br><br>
+            </form>
+        </div>
+        <hr>
+        <div class="Projects">
+            <h3> Projects </h3>
+            <form>
+
+                <label for="projects" >Project name:</label>
+                <input id="projects" ></input><br><br>
+                <textarea id="projectsdescrip" rows="5" cols="50"> Please tell us about the project </textarea><br><br>
+                <input type="button" value="Add Column" /> 
+            </form>
+        </div>
+        <hr> 
+        <div class="Acadinfo">
+            <h3>Academic Information</h3>
+            <h4>Year:</h4>
+            <div>
+                <input type="radio" id="1year" name="year" value="1year"/>
+                <label for="1year">1st year</label>
+            </div>
+            <div>
+                <input type="radio" id="2year" name="year" value="2year" />
+                <label for="2year">2nd year</label>
+            </div>
+            <div>
+                <input type="radio" id="3year" name="year" value="3year" />
+                <label for="3year">3rd year</label>
+            </div>
+            <div>
+                <input type="radio" id="4year" name="year"` value="4year" />
+                <label for="4year">4th year</label>
+            </div>
+            <div>
+                <h4> Current Semester: </h4>
+                <select class="Csem" id="Csem">
+                    <option value="1st">1st</option>
+                    <option value="2nd">2nd</option>
+                    <option value="3rd">3rd</option>
+                    <option value="4th">4th</option>
+                    <option value="5th">5th</option>
+                    <option value="6th">6th</option>
+                    <option value="7th">7th</option>
+                    <option value="8th">8th</option>
+                </select>
+            </div>
+            <h4>Courses Undertaken:</h4>
+            <div class="courses">
+                <label for="Ccode">Course code:</label>
+                <input type="text" id="Ccode" placeholder="Course code"/> 
+                <label for="Coname">Course name:</label>
+                <input type="text" id="Cname" placeholder="Course name"/> 
+                <label for="CoCredit">Course credit:</label>
+                <input type="number" id="CoCredit" placeholder="Credits"/> 
+                <label for="CoInst">Course Instructor:</label>
+                <input type="text" id="CoInst" placeholder="Course Instructor"/> 
+                <input type="button" value="Add Column" /> 
+                <br>
+                <br>
+            </div>
+            
+        <hr>
+        <div class="skills">
+            <h3> Skills: </h3>
+            <h5>Programming Language</h5>
+            <select class="skills" id="progskills">
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Kotlin">Kotlin</option>
+                <option value="Swift">Swift</option>
+            </select>
+            <h5>Database Language:</h5>
+            <select multiple class="skills" id="dataskills">
+                <option value="MySql">MySql</option>
+                <option value="MongoDb">MongoDb</option>
+            </select>
+            <h5>Text Editor Language:</h5>
+            <select multiple class="skills" id="dataskills">
+                <option value="Vscode">VsCode</option>
+                <option value="Sublime text">Sublime Text</option>
+            </select>
+            <h5>Framework:</h5>
+            <select multiple class="skills" id="dataskills">
+                <option value="react">React</option>
+                <option value="angular">Angular</option>
+                <option value="node">Node</option>
+                <option value="express">Express</option>
+            </select>
+            <br>
+            <br>
+            <input type="button" value="Submit" onclick="myFun"/> 
+        </div>
+        <hr>
+        
+    </div>
+    <div>
+        <center><h2 class="name">Candidate Name</h2></center>
+        <div class="content">
+            <div class="userPD">
+                <h3 class=" heaading heading1">
+                    Personal Details
+                </h3>
+                <div class="line line1"></div>
+            </div>
+            <div class="details">
+                <div class="details1">
+                    <div class="head1">
+                        Date of Birth: 
+                    </div>
+                    <div class="head1 dob">
+                        12 June 2004
+                    </div>
+                </div>
+                <div class="details1">
+                    <div class="head1">
+                        Father's Name: 
+                    </div>
+                    <div class="head1 father">
+                        Madan Mohan Goyal
+                    </div>
+                </div>
+                <div class="details1">
+                    <div class="head1">
+                        Phone Number:
+                    </div> 
+                    <div class="head1 number">
+                        8829898937
+                    </div>
+                </div>
+                <div class="details1">
+                    <div class="head1">
+                        Email Address:
+                    </div>
+                    <div class="head1 mail">
+                        cgoy96@gmail.com
+                    </div>
+                </div>
+                <div class="details1">
+                    <div class="head1">
+                        Strength:
+                    </div>
+                    <div class="head1 Strength">
+                        
+                    </div>
+                </div>
+                <div class="details1">
+                    <div class="head1">
+                        Hobby: 
+                    </div>
+                    <div class="head1 hobby">
+                        
+                    </div>
+                </div>
+                <div class="details1">
+                    <div class="head1">
+                        Language Known:
+                    </div>
+                    <div class="head1 lang">
+                        Hindi, English
+                    </div>
+                </div>
+                <div class="details1">
+                    <div class="head1">
+                        LinkedIn :
+                    </div>
+                    <div class="head1 LinkedIn">
+                        
+                    </div>
+                </div>
+                <div class="details1">
+                    <div class="head1">
+                        GitHub : 
+                    </div>
+                    <div class="head1 Github">
+                        
+                    </div>
+                </div>
+                <div class="details1">
+                    <div class="head1">
+                        Permanent Address : 
+                    </div>
+                    <div class="head1 address">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="userPD">
+                <h3 class="heading heading2">
+                    Educational Details
+                </h3>
+                <div class="line line2"></div>
+            </div>
+            <div class="details2 ">
+                <div class="details21">
+                    <div class="head1">
+                        Bachelor of Technology in 
+                    </div>
+                    <div class="data college">
+                        Indian Institute of Information Technology Senapati, Manipur
+                    </div>
+                </div>
+                <div class="details21">
+                    <div class="head1">
+                        Computer Science & Engineering
+                    </div>
+                    <div class="data cpi">
+                        CPI: 9.0
+                    </div>
+                </div>
+                <div class="details21">
+                    <div class="head2 year">
+                        2022 - 2026
+                    </div>
+                </div>
+                <div class="details21">
+                    <div class="head1">
+                        12th, Science
+                    </div>
+                    <div class="data" >
+                        <div>
+                            Institute name:
+                        </div>
+                        <div class="school1">
+                            Vidhya Sagar School
+                        </div>
+                    </div>
+                </div>
+                <div class="details21">
+                    <div class="head2 year2">
+                        2020-2022
+                    </div>
+                    <div class="data1 grade1" >
+                        CGPI:
+                    </div>
+                </div>
+                <div class="details21">
+                    <div class="head1">
+                        10th 
+                    </div>
+                    <div class="data" >
+                        <div>
+                            Institute name:
+                        </div>
+                        <div class="school2">
+                            Warren
+                        </div>
+                    </div>
+                </div>
+                <div class="details21">
+                    <div class="head2 year3">
+                        2020
+                    </div>
+                    <div class="data1" >
+                        <div class="cgpi ">
+                            CGPI:
+                        </div>
+                        <div class="cgpi grade2">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="userPD">
+                <h3 class="heading heading3">
+                    Skills
+                </h3>
+                <div class="line line3"></div>
+            </div>
+            <div class="userPD">
+                <h3 class=" heading heading4">
+                    Project Undertaken
+                </h3>
+                <div></div>
+                <div class="line line4"></div>
+            </div>
+            <div class="userPD">
+                <h3 class="heading heading5">
+                    Acheivements and Certifications
+                </h3>
+                <div class="line line5"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
