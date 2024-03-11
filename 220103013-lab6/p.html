@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        #link{
+            background-color: aliceblue;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            position: relative;
+            top: 30px;
+        }
+    </style>
+</head>
+<body >
+    <div>Hello my name is chirag</div>
+    <div id="content">Chirag Goyal</div>
+    <a href="" id="link">Download</a>
+    <script>
+        function down()
+        {
+            var a = document.getElementById("link");
+            a.download = "export.xml";
+            a.href = "data:text/xml," + document.getElementsByTagName("body")[0].innerHTML;
+        }
+        down();
+    </script>
+</body>
+</html>
