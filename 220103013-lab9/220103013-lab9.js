@@ -1,4 +1,4 @@
-const base64table = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','1','2','3','4','5','6','7','8','9','+','/'];
+const base64table = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','0','1','2','3','4','5','6','7','8','9','+','/'];
 const base32table = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','2','3','4','5','6','7'];
 const asciitable = '                                 !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~';                               
 function myFun()
@@ -189,7 +189,12 @@ function decode(x,y)
         console.log(ans);
     }
     for(let i =0;i<ans.length;i++)
+    {
+        console.log(y[ans[i]]);
         ans2[i] = dec2bin(ans[i],x);
+    }
+
+       
     
     console.log(ans3);
     if(x == 6)
@@ -203,6 +208,8 @@ function decode(x,y)
         for(let i =0;i<ans2[ans2.length-1].length-(count*2);i++)
         {
             ans3 = ans3 + ans2[ans2.length-1][i];
+            console.log(count);
+            console.log(ans3)
         }
     }
     if(x == 5)
