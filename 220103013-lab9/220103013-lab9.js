@@ -159,6 +159,31 @@ function encode(x , y)
     console.log(ans2);
     let ans3 = array2str(ans2);
     b.value = ans3;
+    let p = document.querySelector(".strhead");
+    p.innerHTML = "-> Splitted String";
+    let q = document.querySelector(".str");
+    q.innerHTML = ab;
+    let r = document.querySelector(".asciihead");
+    r.innerHTML = "-> Ascii values";
+    let s = document.querySelector(".ascii");
+    s.innerHTML = ascii;
+    let t = document.querySelector(".strbinhead");
+    t.innerHTML = "-> Converted into string and break it into parts of size 6 bits";
+    let u = document.querySelector(".strbin");
+    u.innerHTML = ans;
+    let v = document.querySelector(".bindechead");
+    v.innerHTML = "-> Converting Binary strings into decimal values";
+    let w = document.querySelector(".bindec");
+    w.innerHTML = ans1; 
+    let x1 = document.querySelector(".a64head");
+    x1.innerHTML = "-> Finding corresponding character value from Base 64 Table ";
+    let x2 = document.querySelector(".a64");
+    x2.innerHTML = ans2;
+    let x3 = document.querySelector(".arrhead");
+    x3.innerHTML = "-> Array to String";
+    let x4 = document.querySelector(".arr");
+    x4.innerHTML = ans3;
+    myMove();
 }
 function decode(x,y)
 {
@@ -237,7 +262,7 @@ function decode(x,y)
     console.log(ans4);
     let ans5 = [];
     let ans6 = [];
-    ans7 ='';
+    let ans7 ='';
     for(let i =0;i<ans4.length;i++)
     {
         ans5[i] = bin2dec(ans4[i]);
@@ -250,63 +275,80 @@ function decode(x,y)
         ans7 = ans7 + ans6[i]
     }
     b.value = ans7;
+    let p = document.querySelector(".strhead");
+    p.innerHTML = "-> Splitted String";
+    let q = document.querySelector(".str");
+    q.innerHTML = ab;
+    let r = document.querySelector(".asciihead");
+    r.innerHTML = "-> values accr to base table ";
+    let s = document.querySelector(".ascii");
+    s.innerHTML = ans;
+    let t = document.querySelector(".strbinhead");
+    t.innerHTML = "-> Converted into string and break it into parts of size 8 bits";
+    let u = document.querySelector(".strbin");
+    u.innerHTML = ans4;
+    let v = document.querySelector(".bindechead");
+    v.innerHTML = "-> Converting Binary strings into decimal values";
+    let w = document.querySelector(".bindec");
+    w.innerHTML = ans5; 
+    let x1 = document.querySelector(".a64head");
+    x1.innerHTML = "-> Finding corresponding character value from ASCII Table ";
+    let x2 = document.querySelector(".a64");
+    x2.innerHTML = ans6;
+    let x3 = document.querySelector(".arrhead");
+    x3.innerHTML = "-> Array to String";
+    let x4 = document.querySelector(".arr");
+    x4.innerHTML = ans7;
+    myMove(); 
 }
+
 function myMove() {
     let id = null;
     const elem = document.getElementsByClassName("container3");  
     console.log(elem); 
     let pos = 0, pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0, pos5 = 0;
     clearInterval(id);
-    id = setInterval(frame, 0);
+    id = setInterval(frame, 20);
     function frame() {
         setTimeout(()=>{
-            if (pos1 > 290) {
-                clearInterval(id);
-              } else {
+            if (pos1 < 290){
                 pos1+=5; 
                 elem[1].style.left = pos1 + "px";
-                elem[1].style.opacity = (pos1 / 290)+'';
+                elem[1].style.opacity = (pos1 / 500)+'';
               }
         }, 2000)
         setTimeout(()=>{
-            if (pos2 > 290) {
-                clearInterval(id);
-              } else {
+            if (pos2 < 290) {
                 pos2+=5; 
                 elem[2].style.left = pos2 + "px"; 
                 elem[2].style.opacity = (pos2 / 290)+'';
               }
-        }, 4000)
+        }, 6000)
         setTimeout(()=>{
-            if (pos3 > 290) {
-                clearInterval(id);
-              } else {
+            if (pos3 < 290) {
+
                 pos3+=5; 
                 elem[3].style.left = pos3 + "px";
                 elem[3].style.opacity = (pos3 / 290)+''; 
               }
-        }, 6000)
+        }, 9000)
         setTimeout(()=>{
-            if (pos4 > 290) {
-                clearInterval(id);
-              } else {
+            if (pos4 < 290) {
+
                 pos4+=5; 
                 elem[4].style.left = pos4 + "px";
                 elem[4].style.opacity = (pos4 / 290)+''; 
               }
-        }, 6000)
+        }, 12000)
         setTimeout(()=>{
-            if (pos5 > 290) {
-                clearInterval(id);
-              } else {
+            if (pos5 < 290) {
                 pos5+=5; 
                 elem[5].style.left = pos5 + "px";
                 elem[5].style.opacity = (pos5 / 290)+''; 
               }
-        }, 6000)
-      if (pos > 290) {
-        clearInterval(id);
-      } else {
+        }, 15000)
+      if (pos < 290) {
+
         pos+=5; 
         elem[0].style.left = pos + "px"; 
         elem[0].style.opacity = (pos / 290)+'';
